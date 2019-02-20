@@ -7,6 +7,9 @@ $dbname="portfolio";
 $firstname=filter_input(_post,firstname);
 $lastname=filter_input(_post,lastname);
 $emailaddress=filter_input(input_post,emailaddress);
+if(!empty($firstname)){
+if(!empty($lastname)){
+if(!empty($emailaddress)){
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
